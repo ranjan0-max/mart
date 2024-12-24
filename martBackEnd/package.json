@@ -1,0 +1,51 @@
+{
+    "name": "mart-software",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js",
+        "watch": "nodemon server.js",
+        "serve": "nodemon server.js",
+        "prod": "pm2 start ecosystem.config.js --env production",
+        "test": "jest",
+        "seeder": "node ./Scripts"
+    },
+    "author": "Ranjan",
+    "license": "ISC",
+    "dependencies": {
+        "@aws-sdk/client-s3": "^3.352.0",
+        "@aws-sdk/s3-request-presigner": "^3.354.0",
+        "aws-sdk": "^2.1397.0",
+        "axios": "^0.27.2",
+        "bcrypt": "^5.0.1",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "cross-env": "^7.0.3",
+        "crypto": "^1.0.1",
+        "dayjs": "^1.10.7",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-mongo-sanitize": "^2.1.0",
+        "express-rate-limit": "^5.5.1",
+        "helmet": "^4.6.0",
+        "joi": "^17.9.2",
+        "jsonwebtoken": "^9.0.0",
+        "mongoose": "^6.0.14",
+        "multer": "^1.4.5-lts.1",
+        "nodemailer": "^6.9.3",
+        "socket.io": "^4.4.1",
+        "winston": "^3.3.3",
+        "winston-daily-rotate-file": "^4.7.1",
+        "xss-clean": "^0.1.1"
+    },
+    "devDependencies": {
+        "jest": "^27.4.3",
+        "nodemon": "^2.0.15",
+        "supertest": "^6.1.6"
+    },
+    "engines": {
+        "node": "16.13.0",
+        "npm": "8.1.0"
+    }
+}
